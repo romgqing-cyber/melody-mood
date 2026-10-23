@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff6f6">
+  <meta name="description" content="一间给喜欢美乐蒂的你准备的今日心情小屋。">
+  <title>今日心情小屋 · 给喜欢美乐蒂的你</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="page-shell">
+    <header class="topbar"><a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark">♡</span><span>小小心情研究所</span></a><span class="top-note">一份今日限定的小可爱</span></header>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> MY MELODY · MOOD ROOM <span class="sparkle">✦</span></div>
+        <h1>文雅，今天的你<br><em>想要什么颜色？</em></h1>
+        <p class="intro">文雅，听说喜欢美乐蒂的人，心里都藏着一块软软的云。<br class="desktop-only">来选一朵今天的心情吧 ☁️</p>
+        <a class="jump-link" href="#mood">开始今天的小测试 <span>↓</span></a>
+      </div>
+      <div class="art-wrap">
+        <div class="orbit orbit-a">✿</div><div class="orbit orbit-b">✧</div><div class="orbit orbit-c">♡</div>
+        <div class="art-sun"></div>
+        <img class="melody-hero" src="melody.png" alt="美乐蒂抱着一颗粉色小爱心">
+        <div class="art-caption">soft day, soft heart</div>
+      </div>      <div class="hero-stamp">♡<small>给你</small></div>
+    </section>
+    <section class="mood-section" id="mood">
+      <div class="section-kicker">01 / PICK YOUR MOOD</div>
+      <h2>此刻的心情像……</h2>
+      <p class="section-sub">不用想太多，凭第一感觉选一个就好。</p>
+      <div class="mood-grid" role="group" aria-label="选择今天的心情">
+        <button class="mood-card selected" data-mood="sunny" aria-pressed="true"><span class="mood-emoji">🌷</span><span class="mood-name">软乎乎</span><span class="mood-hint">想被温柔对待</span></button>
+        <button class="mood-card" data-mood="spark" aria-pressed="false"><span class="mood-emoji">✨</span><span class="mood-name">闪闪的</span><span class="mood-hint">今天状态不错</span></button>
+        <button class="mood-card" data-mood="cloud" aria-pressed="false"><span class="mood-emoji">☁️</span><span class="mood-name">慢一点</span><span class="mood-hint">需要一点点充电</span></button>
+        <button class="mood-card" data-mood="mystery" aria-pressed="false"><span class="mood-emoji">🎀</span><span class="mood-name">说不清</span><span class="mood-hint">那就先不说啦</span></button>
+      </div>
+      <div class="mood-result" aria-live="polite"><span class="result-icon">🌸</span><span id="mood-message">收到啦，今天请对自己温柔一点点。</span><span class="result-heart">♡</span></div>
+    </section>
+    <section class="fortune-section">
+      <div class="fortune-card">
+        <div class="fortune-top"><span>02 / A LITTLE LUCK</span><span class="fortune-seal">今日好运</span></div>
+        <div class="fortune-content"><div class="fortune-star">✷</div><div><h2>抽一张今日好运签</h2><p id="fortune-text">点一下，让美乐蒂给你一点小小的好运。</p></div></div>
+        <button class="fortune-button" id="fortune-button"><span>帮我抽签</span><span aria-hidden="true">↗</span></button>
+        <div class="fortune-foot">GOOD THINGS ARE GROWING ♡</div>
+      </div>
+      <div class="note-card wish-card"><div class="note-doodle">☁</div><h3>文雅的今日小愿望</h3><p class="wish-hint">写一句想实现的小事，<br>放进兔兔的愿望瓶里吧。</p><form id="wish-form"><label class="sr-only" for="wish-input">写下今天的小愿望</label><input id="wish-input" maxlength="48" placeholder="比如：今天早点下班" required><button type="submit">放进愿望瓶 <span>♡</span></button></form><p class="wish-result" id="wish-result" aria-live="polite"></p><span class="wish-note">只在这个小页面里展示 ♡</span></div>
+    </section>
+    <footer><span>赵文雅的专属心情小屋 · 由一个会写代码的人认真制作</span><span class="footer-heart">♡</span><span>愿你今天有好心情</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
